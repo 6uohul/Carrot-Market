@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  CarrotMarket
 //
-//  Created by 고두영 on 2022/12/13.
+//  Created by 김인영 on 2022/12/13.
 //
 
 import UIKit

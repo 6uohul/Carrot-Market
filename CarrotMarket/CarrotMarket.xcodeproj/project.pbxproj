@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		142F0C232949D61800BBD199 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C182949D61700BBD199 /* ChatViewController.swift */; };
+		142F0C242949D61800BBD199 /* AroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C1A2949D61700BBD199 /* AroundViewController.swift */; };
+		142F0C252949D61800BBD199 /* MyCarrotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C1C2949D61700BBD199 /* MyCarrotViewController.swift */; };
+		142F0C262949D61800BBD199 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C1E2949D61700BBD199 /* HomeViewController.swift */; };
+		142F0C272949D61800BBD199 /* NeighborLifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C202949D61800BBD199 /* NeighborLifeViewController.swift */; };
+		142F0C282949D61800BBD199 /* CarrotTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C222949D61800BBD199 /* CarrotTabBarController.swift */; };
+		142F0C2B2949DD0900BBD199 /* addSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C2A2949DD0900BBD199 /* addSubviews.swift */; };
+		142F0C2D294A12D600BBD199 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C2C294A12D600BBD199 /* ItemTableViewCell.swift */; };
+		142F0C2F294C703700BBD199 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C2E294C703700BBD199 /* ItemModel.swift */; };
+		142F0C31294CA73D00BBD199 /* WritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C30294CA73D00BBD199 /* WritingViewController.swift */; };
+		142F0C33294D87DE00BBD199 /* PhotoSelectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C32294D87DE00BBD199 /* PhotoSelectCollectionViewCell.swift */; };
+		142F0C35294DE21000BBD199 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C34294DE21000BBD199 /* PhotoModel.swift */; };
+		142F0C37294E2A7F00BBD199 /* SelectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C36294E2A7F00BBD199 /* SelectModel.swift */; };
+		147385282953904D003480C2 /* SelectedPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147385272953904D003480C2 /* SelectedPhotoCollectionViewCell.swift */; };
 		987E4C5F29484C9300060FD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E4C5E29484C9300060FD1 /* AppDelegate.swift */; };
 		987E4C6129484C9300060FD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E4C6029484C9300060FD1 /* SceneDelegate.swift */; };
 		987E4C6329484C9300060FD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E4C6229484C9300060FD1 /* ViewController.swift */; };
@@ -27,6 +41,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		142F0C182949D61700BBD199 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		142F0C1A2949D61700BBD199 /* AroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AroundViewController.swift; sourceTree = "<group>"; };
+		142F0C1C2949D61700BBD199 /* MyCarrotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCarrotViewController.swift; sourceTree = "<group>"; };
+		142F0C1E2949D61700BBD199 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		142F0C202949D61800BBD199 /* NeighborLifeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeighborLifeViewController.swift; sourceTree = "<group>"; };
+		142F0C222949D61800BBD199 /* CarrotTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrotTabBarController.swift; sourceTree = "<group>"; };
+		142F0C2A2949DD0900BBD199 /* addSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = addSubviews.swift; path = ../../../../addSubviews.swift; sourceTree = "<group>"; };
+		142F0C2C294A12D600BBD199 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		142F0C2E294C703700BBD199 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		142F0C30294CA73D00BBD199 /* WritingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingViewController.swift; sourceTree = "<group>"; };
+		142F0C32294D87DE00BBD199 /* PhotoSelectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectCollectionViewCell.swift; sourceTree = "<group>"; };
+		142F0C34294DE21000BBD199 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		142F0C36294E2A7F00BBD199 /* SelectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectModel.swift; sourceTree = "<group>"; };
+		147385272953904D003480C2 /* SelectedPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		987E4C5B29484C9300060FD1 /* CarrotMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarrotMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		987E4C5E29484C9300060FD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		987E4C6029484C9300060FD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +87,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		142F0C142949D4D900BBD199 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				142F0C292949DCF200BBD199 /* Utils */,
+				987E4C722948537D00060FD1 /* Support */,
+				142F0C152949D51800BBD199 /* Resources */,
+				987E4C742948539800060FD1 /* Extension */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		142F0C152949D51800BBD199 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				987E4C75294853B200060FD1 /* Asset */,
+				987E4C8029485BF000060FD1 /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		142F0C162949D55700BBD199 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				142F0C192949D61700BBD199 /* Around */,
+				142F0C172949D61700BBD199 /* Chat */,
+				142F0C1D2949D61700BBD199 /* Home */,
+				142F0C1B2949D61700BBD199 /* MyCarrot */,
+				142F0C1F2949D61800BBD199 /* Neighbor */,
+				142F0C212949D61800BBD199 /* TabBar */,
+				987E4C6229484C9300060FD1 /* ViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		142F0C172949D61700BBD199 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				142F0C182949D61700BBD199 /* ChatViewController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		142F0C192949D61700BBD199 /* Around */ = {
+			isa = PBXGroup;
+			children = (
+				142F0C1A2949D61700BBD199 /* AroundViewController.swift */,
+			);
+			path = Around;
+			sourceTree = "<group>";
+		};
+		142F0C1B2949D61700BBD199 /* MyCarrot */ = {
+			isa = PBXGroup;
+			children = (
+				142F0C1C2949D61700BBD199 /* MyCarrotViewController.swift */,
+			);
+			path = MyCarrot;
+			sourceTree = "<group>";
+		};
+		142F0C1D2949D61700BBD199 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				142F0C1E2949D61700BBD199 /* HomeViewController.swift */,
+				142F0C2C294A12D600BBD199 /* ItemTableViewCell.swift */,
+				142F0C2E294C703700BBD199 /* ItemModel.swift */,
+				142F0C30294CA73D00BBD199 /* WritingViewController.swift */,
+				142F0C32294D87DE00BBD199 /* PhotoSelectCollectionViewCell.swift */,
+				142F0C34294DE21000BBD199 /* PhotoModel.swift */,
+				142F0C36294E2A7F00BBD199 /* SelectModel.swift */,
+				147385272953904D003480C2 /* SelectedPhotoCollectionViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		142F0C1F2949D61800BBD199 /* Neighbor */ = {
+			isa = PBXGroup;
+			children = (
+				142F0C202949D61800BBD199 /* NeighborLifeViewController.swift */,
+			);
+			path = Neighbor;
+			sourceTree = "<group>";
+		};
+		142F0C212949D61800BBD199 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				142F0C222949D61800BBD199 /* CarrotTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		142F0C292949DCF200BBD199 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				142F0C2A2949DD0900BBD199 /* addSubviews.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		987E4C5229484C9300060FD1 = {
 			isa = PBXGroup;
 			children = (
@@ -78,10 +203,8 @@
 		987E4C5D29484C9300060FD1 /* CarrotMarket */ = {
 			isa = PBXGroup;
 			children = (
-				987E4C6229484C9300060FD1 /* ViewController.swift */,
-				987E4C75294853B200060FD1 /* Asset */,
-				987E4C742948539800060FD1 /* Extension */,
-				987E4C722948537D00060FD1 /* Support */,
+				142F0C142949D4D900BBD199 /* Global */,
+				142F0C162949D55700BBD199 /* Screens */,
 			);
 			path = CarrotMarket;
 			sourceTree = "<group>";
@@ -89,11 +212,11 @@
 		987E4C722948537D00060FD1 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				987E4C6029484C9300060FD1 /* SceneDelegate.swift */,
+				987E4C5E29484C9300060FD1 /* AppDelegate.swift */,
 				987E4C6929484C9500060FD1 /* LaunchScreen.storyboard */,
 				987E4C6429484C9300060FD1 /* Main.storyboard */,
 				987E4C6C29484C9500060FD1 /* Info.plist */,
-				987E4C6029484C9300060FD1 /* SceneDelegate.swift */,
-				987E4C5E29484C9300060FD1 /* AppDelegate.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -102,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				987E4C782948545A00060FD1 /* UIColor+.swift */,
-				987E4C8029485BF000060FD1 /* Font */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -218,8 +340,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				987E4C6329484C9300060FD1 /* ViewController.swift in Sources */,
+				142F0C31294CA73D00BBD199 /* WritingViewController.swift in Sources */,
+				142F0C252949D61800BBD199 /* MyCarrotViewController.swift in Sources */,
+				142F0C2F294C703700BBD199 /* ItemModel.swift in Sources */,
+				142F0C282949D61800BBD199 /* CarrotTabBarController.swift in Sources */,
+				142F0C2B2949DD0900BBD199 /* addSubviews.swift in Sources */,
+				147385282953904D003480C2 /* SelectedPhotoCollectionViewCell.swift in Sources */,
+				142F0C35294DE21000BBD199 /* PhotoModel.swift in Sources */,
+				142F0C2D294A12D600BBD199 /* ItemTableViewCell.swift in Sources */,
+				142F0C242949D61800BBD199 /* AroundViewController.swift in Sources */,
+				142F0C272949D61800BBD199 /* NeighborLifeViewController.swift in Sources */,
+				142F0C262949D61800BBD199 /* HomeViewController.swift in Sources */,
+				142F0C37294E2A7F00BBD199 /* SelectModel.swift in Sources */,
 				987E4C792948545A00060FD1 /* UIColor+.swift in Sources */,
+				142F0C33294D87DE00BBD199 /* PhotoSelectCollectionViewCell.swift in Sources */,
 				987E4C5F29484C9300060FD1 /* AppDelegate.swift in Sources */,
+				142F0C232949D61800BBD199 /* ChatViewController.swift in Sources */,
 				987E4C6129484C9300060FD1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,7 +505,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4TYSGZ3T9G;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CarrotMarket/Support/Info.plist;
+				INFOPLIST_FILE = CarrotMarket/Global/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -397,7 +533,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4TYSGZ3T9G;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CarrotMarket/Support/Info.plist;
+				INFOPLIST_FILE = CarrotMarket/Global/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
