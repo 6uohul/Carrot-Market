@@ -41,6 +41,7 @@ class WritingViewController: UIViewController {
         $0.setTitle("완료", for: .normal)
         $0.setTitleColor(UIColor.orrange_btn, for: .normal)
         $0.titleLabel?.font = UIFont(name: "NotoSansSC-Regular", size: 17)
+        $0.addTarget(self, action: #selector(touchUpCloseButton), for: .touchUpInside)
     }
     private let naviUnderlineView = UIView().then {
         $0.backgroundColor = UIColor.square_gray
@@ -58,6 +59,7 @@ class WritingViewController: UIViewController {
 
     private lazy var collectionView : UICollectionView = UICollectionView(frame: .zero, collectionViewLayout: layout).then {
         $0.backgroundColor = .clear
+        $0.showsHorizontalScrollIndicator = false
         $0.delegate = self
         $0.dataSource = self
     }
@@ -79,6 +81,9 @@ class WritingViewController: UIViewController {
     }
     private let priceTextField = UITextField().then {
         $0.attributedPlaceholder = NSAttributedString(string: "₩ 가격", attributes: [.foregroundColor: UIColor.systemGray])
+    }
+    private let priceCheckBox = UIButton().then {
+        $0.setImage(UIImage(named: "ios_icon_check"), for: .normal)
     }
     private let underlineView4 = UIView().then {
         $0.backgroundColor = .linegray2
@@ -113,6 +118,7 @@ class WritingViewController: UIViewController {
         super.viewDidLoad()
         setLayout()
         register()
+        self.priceTextField.delegate = self
     }
     
     @objc private func touchUpCloseButton() {
@@ -293,12 +299,16 @@ extension WritingViewController : UICollectionViewDataSource, UICollectionViewDe
         guard let photoCell = collectionView.dequeueReusableCell(withReuseIdentifier: SelectedPhotoCollectionViewCell.identifier, for: indexPath) as? SelectedPhotoCollectionViewCell else { return UICollectionViewCell() }
         
         if indexPath.row == 0 {
-            cameraCell.dataBind(model: SelectModel(selectedNumber: 2))
+            cameraCell.dataBind(model: SelectModel(selectedNumber: photoList.count))
+            return cameraCell
         } else {
             photoCell.dataBind(model: photoList[indexPath.row - 1])
+            return photoCell
         }
-        
-        return photoCell
     }
 }
 
+//MARK: - TextField Delegate
+extension WritingViewController: UITextFieldDelegate {
+    
+}

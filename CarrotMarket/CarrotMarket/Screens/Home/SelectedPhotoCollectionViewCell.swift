@@ -14,7 +14,7 @@ class SelectedPhotoCollectionViewCell: UICollectionViewCell {
     static let identifier = "SelectedPhotoCollectionViewCell"
     
     private let selectButtonView = UIImageView().then {
-        $0.backgroundColor = .squaregray
+        $0.backgroundColor = .clear
     }
     
     override init(frame: CGRect) {

@@ -15,10 +15,14 @@ class PhotoSelectCollectionViewCell: UICollectionViewCell {
     
     private let selectButtonView = UIImageView().then {
         $0.backgroundColor = .clear
+        $0.layer.borderWidth = 1.5
+        $0.layer.cornerRadius = 4
+        $0.layer.borderColor = UIColor.squaregray.cgColor
     }
     
     private let cameraIcon = UIImageView().then {
         $0.image = UIImage(named: "ios_camera")
+        $0.contentMode = .scaleAspectFit
     }
     
     private var selectedNumberLabel = UILabel().then {
