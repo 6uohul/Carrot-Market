@@ -11,6 +11,17 @@ import Then
 
 class WritingViewController: UIViewController {
 
+    var isSelected: Bool = false {
+        didSet {
+            if isSelected {
+                recommendButton.setImage(UIImage(named: "ios_check_on"), for: .normal)
+            }
+            else {
+                recommendButton.setImage(UIImage(named: "ios_check_off"), for: .normal)
+            }
+        }
+    }
+    
     //MARK: - Dummy Photo Data
     
     let photoList : [PhotoModel] = [
@@ -76,6 +87,21 @@ class WritingViewController: UIViewController {
     private let categoryTextField = UITextField().then {
         $0.attributedPlaceholder = NSAttributedString(string: "카테고리", attributes: [.foregroundColor: UIColor.systemGray])
     }
+    private lazy var recommendButton = UIButton().then {
+        $0.setImage(UIImage(named: "ios_check_off"), for: .normal)
+        $0.setTitle("가격제안 받기", for: .normal)
+        $0.setTitleColor(.squaregray, for: .normal)
+        $0.titleLabel?.font = .systemFont(ofSize: 13, weight: .medium)
+        $0.configuration?.contentInsets = NSDirectionalEdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12)
+        $0.addTarget(self, action: #selector(touchUpCheckRecommendButton), for: .touchUpInside)
+        $0.contentEdgeInsets = UIEdgeInsets (top: 0, left: 0, bottom: 0, right: 0)
+        $0.titleEdgeInsets = UIEdgeInsets (top: 0, left: 0, bottom: 0, right: -5)
+    }
+//    private let recommendLabel = UILabel().then {
+//        $0.text = "가격제안 받기"
+//        $0.font = UIFont(name: "Poppins-Regular", size: 13)
+//        $0.textColor = UIColor.squaregray
+//    }
     private let underlineView3 = UIView().then {
         $0.backgroundColor = .linegray2
     }
@@ -119,10 +145,15 @@ class WritingViewController: UIViewController {
         setLayout()
         register()
         self.priceTextField.delegate = self
+        self.categoryTextField.delegate = self
     }
     
     @objc private func touchUpCloseButton() {
         self.navigationController?.popViewController(animated: true)
+    }
+    @objc private func touchUpCheckRecommendButton() {
+        recommendButton.isSelected = self.isSelected
+        self.isSelected.toggle()
     }
     
 }
@@ -166,7 +197,7 @@ extension WritingViewController {
             underlineView4,
             contentsTextView
         )
-        
+        categoryTextField.addSubviews(recommendButton)
         // naviView
         naviView.snp.makeConstraints {
             $0.top.leading.trailing.equalTo(view.safeAreaLayoutGuide)
@@ -248,6 +279,11 @@ extension WritingViewController {
             $0.leading.trailing.equalTo(view.safeAreaLayoutGuide).inset(15)
             $0.height.equalTo(24)
         }
+        recommendButton.snp.makeConstraints {
+            $0.centerY.equalToSuperview()
+            $0.trailing.equalToSuperview().inset(15)
+            $0.height.equalTo(24)
+        }
         underlineView3.snp.makeConstraints {
             $0.top.equalTo(categoryTextField.snp.bottom).offset(23)
             $0.leading.trailing.equalTo(view.safeAreaLayoutGuide).inset(15)
@@ -284,8 +320,8 @@ extension WritingViewController : UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-            return UIEdgeInsets(top: 22, left: 19, bottom: 22, right: 19)
-        }
+        return UIEdgeInsets(top: 22, left: 19, bottom: 22, right: 19)
+    }
 }
 
 extension WritingViewController : UICollectionViewDataSource, UICollectionViewDelegate {
@@ -310,5 +346,15 @@ extension WritingViewController : UICollectionViewDataSource, UICollectionViewDe
 
 //MARK: - TextField Delegate
 extension WritingViewController: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        recommendButton.setTitleColor(.red, for: .normal)
+    }
     
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if let text = categoryTextField.text {
+            if text.isEmpty == true {
+                recommendButton.setTitleColor(.squaregray, for: .normal)
+            }
+        }
+    }
 }
