@@ -1,8 +1,8 @@
 //
-//  addSubviews.swift
+//  addSubViews.swift
 //  CarrotMarket
 //
-//  Created by 김인영 on 2022/12/14.
+//  Created by 김인영 on 2022/12/28.
 //
 
 import UIKit

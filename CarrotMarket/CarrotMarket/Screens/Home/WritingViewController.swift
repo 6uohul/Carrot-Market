@@ -145,7 +145,6 @@ class WritingViewController: UIViewController {
         setLayout()
         register()
         self.priceTextField.delegate = self
-        self.categoryTextField.delegate = self
     }
     
     @objc private func touchUpCloseButton() {
@@ -194,10 +193,10 @@ extension WritingViewController {
             categoryTextField,
             underlineView3,
             priceTextField,
+            recommendButton,
             underlineView4,
             contentsTextView
         )
-        categoryTextField.addSubviews(recommendButton)
         // naviView
         naviView.snp.makeConstraints {
             $0.top.leading.trailing.equalTo(view.safeAreaLayoutGuide)
@@ -276,12 +275,7 @@ extension WritingViewController {
         }
         categoryTextField.snp.makeConstraints {
             $0.top.equalTo(underlineView2.snp.bottom).offset(23)
-            $0.leading.trailing.equalTo(view.safeAreaLayoutGuide).inset(15)
-            $0.height.equalTo(24)
-        }
-        recommendButton.snp.makeConstraints {
-            $0.centerY.equalToSuperview()
-            $0.trailing.equalToSuperview().inset(15)
+            $0.leading.equalTo(view.safeAreaLayoutGuide).inset(15)
             $0.height.equalTo(24)
         }
         underlineView3.snp.makeConstraints {
@@ -292,6 +286,11 @@ extension WritingViewController {
         priceTextField.snp.makeConstraints {
             $0.top.equalTo(underlineView3.snp.bottom).offset(23)
             $0.leading.trailing.equalTo(view.safeAreaLayoutGuide).inset(15)
+            $0.height.equalTo(24)
+        }
+        recommendButton.snp.makeConstraints {
+            $0.centerY.equalTo(priceTextField)
+            $0.trailing.equalToSuperview().inset(15)
             $0.height.equalTo(24)
         }
         underlineView4.snp.makeConstraints {
@@ -347,7 +346,7 @@ extension WritingViewController : UICollectionViewDataSource, UICollectionViewDe
 //MARK: - TextField Delegate
 extension WritingViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        recommendButton.setTitleColor(.red, for: .normal)
+        recommendButton.setTitleColor(.black, for: .normal)
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {

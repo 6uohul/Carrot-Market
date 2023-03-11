@@ -13,7 +13,6 @@
 		142F0C262949D61800BBD199 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C1E2949D61700BBD199 /* HomeViewController.swift */; };
 		142F0C272949D61800BBD199 /* NeighborLifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C202949D61800BBD199 /* NeighborLifeViewController.swift */; };
 		142F0C282949D61800BBD199 /* CarrotTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C222949D61800BBD199 /* CarrotTabBarController.swift */; };
-		142F0C2B2949DD0900BBD199 /* addSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C2A2949DD0900BBD199 /* addSubviews.swift */; };
 		142F0C2D294A12D600BBD199 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C2C294A12D600BBD199 /* ItemTableViewCell.swift */; };
 		142F0C2F294C703700BBD199 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C2E294C703700BBD199 /* ItemModel.swift */; };
 		142F0C31294CA73D00BBD199 /* WritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C30294CA73D00BBD199 /* WritingViewController.swift */; };
@@ -21,6 +20,7 @@
 		142F0C35294DE21000BBD199 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C34294DE21000BBD199 /* PhotoModel.swift */; };
 		142F0C37294E2A7F00BBD199 /* SelectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F0C36294E2A7F00BBD199 /* SelectModel.swift */; };
 		147385282953904D003480C2 /* SelectedPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147385272953904D003480C2 /* SelectedPhotoCollectionViewCell.swift */; };
+		147F660D295C3659002333C7 /* addSubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F660C295C3659002333C7 /* addSubViews.swift */; };
 		987E4C5F29484C9300060FD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E4C5E29484C9300060FD1 /* AppDelegate.swift */; };
 		987E4C6129484C9300060FD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E4C6029484C9300060FD1 /* SceneDelegate.swift */; };
 		987E4C6329484C9300060FD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E4C6229484C9300060FD1 /* ViewController.swift */; };
@@ -47,7 +47,6 @@
 		142F0C1E2949D61700BBD199 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		142F0C202949D61800BBD199 /* NeighborLifeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeighborLifeViewController.swift; sourceTree = "<group>"; };
 		142F0C222949D61800BBD199 /* CarrotTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrotTabBarController.swift; sourceTree = "<group>"; };
-		142F0C2A2949DD0900BBD199 /* addSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = addSubviews.swift; path = ../../../../addSubviews.swift; sourceTree = "<group>"; };
 		142F0C2C294A12D600BBD199 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		142F0C2E294C703700BBD199 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		142F0C30294CA73D00BBD199 /* WritingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		142F0C34294DE21000BBD199 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		142F0C36294E2A7F00BBD199 /* SelectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectModel.swift; sourceTree = "<group>"; };
 		147385272953904D003480C2 /* SelectedPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		147F660C295C3659002333C7 /* addSubViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addSubViews.swift; sourceTree = "<group>"; };
 		987E4C5B29484C9300060FD1 /* CarrotMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarrotMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		987E4C5E29484C9300060FD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		987E4C6029484C9300060FD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -179,7 +179,6 @@
 		142F0C292949DCF200BBD199 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				142F0C2A2949DD0900BBD199 /* addSubviews.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -225,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				987E4C782948545A00060FD1 /* UIColor+.swift */,
+				147F660C295C3659002333C7 /* addSubViews.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -344,7 +344,6 @@
 				142F0C252949D61800BBD199 /* MyCarrotViewController.swift in Sources */,
 				142F0C2F294C703700BBD199 /* ItemModel.swift in Sources */,
 				142F0C282949D61800BBD199 /* CarrotTabBarController.swift in Sources */,
-				142F0C2B2949DD0900BBD199 /* addSubviews.swift in Sources */,
 				147385282953904D003480C2 /* SelectedPhotoCollectionViewCell.swift in Sources */,
 				142F0C35294DE21000BBD199 /* PhotoModel.swift in Sources */,
 				142F0C2D294A12D600BBD199 /* ItemTableViewCell.swift in Sources */,
@@ -353,6 +352,7 @@
 				142F0C262949D61800BBD199 /* HomeViewController.swift in Sources */,
 				142F0C37294E2A7F00BBD199 /* SelectModel.swift in Sources */,
 				987E4C792948545A00060FD1 /* UIColor+.swift in Sources */,
+				147F660D295C3659002333C7 /* addSubViews.swift in Sources */,
 				142F0C33294D87DE00BBD199 /* PhotoSelectCollectionViewCell.swift in Sources */,
 				987E4C5F29484C9300060FD1 /* AppDelegate.swift in Sources */,
 				142F0C232949D61800BBD199 /* ChatViewController.swift in Sources */,
